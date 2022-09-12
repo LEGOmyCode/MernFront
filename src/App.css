@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  background: url("../assets/travelmap.jpg");
+  /* background: url("../assets/travelmap.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 150vh;
+  background-size: cover; */
+  height: 100vh;
 }
 
 .App h1 {

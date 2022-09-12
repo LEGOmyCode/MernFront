@@ -7,7 +7,7 @@ function SearchWindow() {
     <div className="banner">
       <h1>Welcome</h1>
       <h3>Search your favorite Vacations</h3>
-      <div className="meal-input">
+      <div className="vacay-input">
         <InputGroup className="mb-3">
           <Form.Control
             placeholder="Search"

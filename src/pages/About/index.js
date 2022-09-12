@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 const About = () => {
   return (
-    <div className="aboutpage">
+    <div className="aboutPage">
       <div className="aboutHeader">
         <h1>About Us</h1>
       </div>
@@ -15,6 +15,7 @@ const About = () => {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum."
       </p>
+      <div className="footerLogo"></div>
     </div>
   );
 };
