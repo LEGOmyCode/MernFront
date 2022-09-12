@@ -4,8 +4,9 @@
 }
 
 .aboutHeader {
-  color: black;
+  color: #2f2f2f;
 }
+
 .ncsLogo {
   background-image: url("../../../assets/NCS.png");
   background-size: contain;

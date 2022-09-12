@@ -1,6 +1,10 @@
 .banner {
-  background-color: black;
-  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../../../assets/travelmap.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +14,7 @@
 h3 {
   color: #cad8de;
 }
-.meal-input {
+.vacay-input {
   width: 50%;
   margin-top: 50px;
 }
