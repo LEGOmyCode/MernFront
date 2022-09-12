@@ -3,25 +3,28 @@ import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
-import SearchWindow from "./components/SearchWindow";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <header>
-          <h1 className="title">Welcome to MERN'd Black</h1>
-
           <div className="navBar">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link style={{ textDecoration: "none" }} to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/pages/Favorites">Favorites</Link>
+                <Link style={{ textDecoration: "none" }} to="/pages/Favorites">
+                  Favorites
+                </Link>
               </li>
               <li>
-                <Link to="/pages/About">About</Link>
+                <Link style={{ textDecoration: "none" }} to="/pages/About">
+                  About
+                </Link>
               </li>
             </ul>
           </div>

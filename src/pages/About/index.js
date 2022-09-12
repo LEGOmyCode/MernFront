@@ -5,6 +5,7 @@ const About = () => {
     <div className="aboutPage">
       <div className="aboutHeader">
         <h1>About Us</h1>
+        <div className="ncsLogo"></div>
       </div>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
