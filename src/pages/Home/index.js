@@ -1,12 +1,7 @@
 import React from "react";
-import SearchWindow from "../../components/SearchWindow";
 
-function Home() {
-  return (
-    <div>
-      <SearchWindow />
-    </div>
-  );
-}
+const Home = () => {
+  return <div>Home</div>;
+};
 
 export default Home;

@@ -6,15 +6,15 @@ function SearchWindow() {
   return (
     <div className="banner">
       <h1>Welcome</h1>
-      <h3>Search your favorite meals</h3>
+      <h3>Search your favorite Vacations</h3>
       <div className="meal-input">
         <InputGroup className="mb-3">
           <Form.Control
-            placeholder="Search Meals"
-            aria-label="Search For Meals"
-            aria-describedby="meal-search-button"
+            placeholder="Search"
+            aria-label="Search For Vacations"
+            aria-describedby="travel-search-button"
           />
-          <Button variant="danger" id="meal-search">
+          <Button variant="danger" id="travel-search">
             Search
           </Button>
         </InputGroup>

@@ -7,9 +7,9 @@ function Heading() {
       <Container>
         <Navbar.Brand href="#landing">MERN'd Black</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="../../pages/Home">Explore</Nav.Link>
-          <Nav.Link href="#favorites">Favorites</Nav.Link>
-          <Nav.Link href="../../pages/About">About</Nav.Link>
+          <Nav.Link href="#Explore">Explore</Nav.Link>
+          <Nav.Link href="#favorites">My Locations</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
