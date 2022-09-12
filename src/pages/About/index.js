@@ -1,6 +1,5 @@
 import React from "react";
-import Home from "../Home";
-
+import "./styles.css";
 const About = () => {
   return (
     <div className="aboutpage">
@@ -8,23 +7,14 @@ const About = () => {
         <h1>About Us</h1>
       </div>
       <p>
-        When returning from a spritual journey through the Earth, Monty
-        McMansions decided to dedicate some of his fortune to offering spritiual
-        wellness for others back in his hometown.{" "}
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum."
       </p>
-      <p>
-        As the heir of the industrious McMansions fortune, Monty was never
-        satisfied with the material wealth that provided him everything he
-        desired.{" "}
-      </p>
-      <p>
-        Monty decided to travel around the world to find peace and happiness
-      </p>
-      <p>
-        Upon his return, he dedicated about 1% of his wealth to open this
-        Mineral SPA to bring joy and spiritual happiness to others
-      </p>
-      <img src="hotsprings.jpg" alt="hotsprings" />I
     </div>
   );
 };
