@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
                   About
                 </Link>
               </li>
+              <li>
+                <Link style={{ textDecoration: "none" }} to="/pages/Error">
+                  Error
+                </Link>
+              </li>
             </ul>
           </div>
         </header>
@@ -34,6 +40,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/pages/Favorites" element={<Favorites />} />
             <Route path="/pages/About" element={<About />} />
+            <Route path="/pages/Error" element={<Error />} />
           </Routes>
         </div>
       </Router>

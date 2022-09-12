@@ -1,0 +1,14 @@
+.error {
+  color: black;
+}
+.pug {
+  background-image: url("../../../assets/pugfrown.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 500px;
+}
