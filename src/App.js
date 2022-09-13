@@ -1,9 +1,9 @@
 import "./App.css";
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
-import About from "./pages/About";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
-import Error from "./pages/Error";
+import AddLocation from "./pages/Add";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -18,18 +18,13 @@ function App() {
                 </Link>
               </li>
               <li>
-                <Link style={{ textDecoration: "none" }} to="/pages/Favorites">
+                <Link style={{ textDecoration: "none" }} to="/pages/favorites">
                   Favorites
                 </Link>
               </li>
               <li>
-                <Link style={{ textDecoration: "none" }} to="/pages/About">
+                <Link style={{ textDecoration: "none" }} to="/pages/about">
                   About
-                </Link>
-              </li>
-              <li>
-                <Link style={{ textDecoration: "none" }} to="/pages/Error">
-                  Error
                 </Link>
               </li>
             </ul>
@@ -38,13 +33,21 @@ function App() {
         <div className="display">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/pages/Favorites" element={<Favorites />} />
-            <Route path="/pages/About" element={<About />} />
-            <Route path="/pages/Error" element={<Error />} />
+            <Route path="/pages/favorites" element={<Favorites />} />
+            <Route path="/pages/about" element={<About />} />
+            {/* <Route path="/pages/Error" element={<Error />} /> */}
           </Routes>
         </div>
       </Router>
     </div>
+
+    // <Router>
+    //   <div>
+    //     <Route exact path="/" component={Home} />
+    //     <Route path="/pages/favorites" component={Favorites} />
+    //     <Route path="/pages/add" component={AddLocation} />
+    //   </div>
+    // </Router>
   );
 }
 

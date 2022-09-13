@@ -1,22 +1,32 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
-const Favorites = () => {
+const Locations = () => {
+  const [locations, setLocations] = useState([]);
+  useEffect(() => {
+    async function getLocations() {
+      const url = process.env.REACT_APP_BACKEND_URL + "locations";
+      const response = await fetch(url);
+      const data = await response.json();
+      //Only use as reference when building then delete
+      console.log(data);
+      setLocations(data);
+    }
+    getLocations();
+  }, []);
+  const display =
+    locations.length &&
+    locations.map((location) => {
+      return <h3 key={location._id}> {location.countryName} </h3>;
+    });
   return (
-    <div className="favoritepage">
-      <div className="favoriteHeader">
-        <h1>My Favorites</h1>
+    <div className="locationspage">
+      <div className="locations">
+        <h1>My Locations</h1>
       </div>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
-      </p>
+      {display}
+      <h1>Change the words in Locations on every Favorites</h1>
     </div>
   );
 };
 
-export default Favorites;
+export default Locations;
