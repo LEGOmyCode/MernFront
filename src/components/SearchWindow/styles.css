@@ -16,5 +16,9 @@ h3 {
 }
 .vacay-input {
   width: 50%;
-  margin-top: 50px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content:center;
+  color: rgb(222, 175, 95);
 }
