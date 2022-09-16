@@ -19,7 +19,7 @@ function App() {
               </li>
               <li>
                 <Link style={{ textDecoration: "none" }} to="/pages/favorites">
-                  Favorites
+                  Locations
                 </Link>
               </li>
               <li>
