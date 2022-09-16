@@ -26,7 +26,7 @@ function AddLocation() {
                   placeholder="Country Name"
                   name="countryName"
                   className="form-control"
-                  value={this.state.countryName}
+                  value={this.location.countryName}
                   onChange={this.onChange}
                 />
               </div>
@@ -38,7 +38,7 @@ function AddLocation() {
                   placeholder="City Name"
                   name="cityName"
                   className="form-control"
-                  value={this.state.cityName}
+                  value={this.location.cityName}
                   onChange={this.onChange}
                 />
               </div>
@@ -49,7 +49,7 @@ function AddLocation() {
                   placeholder="Photo"
                   name="photo"
                   className="form-control"
-                  value={this.state.photo}
+                  value={this.location.photo}
                   onChange={this.onChange}
                 />
               </div>
@@ -60,7 +60,7 @@ function AddLocation() {
                   placeholder="User"
                   name="user"
                   className="form-control"
-                  value={this.state.user}
+                  value={this.location.user}
                   onChange={this.onChange}
                 />
               </div>
@@ -71,7 +71,7 @@ function AddLocation() {
                   placeholder="Date Visited"
                   name="visitDate"
                   className="form-control"
-                  value={this.state.VisitDate}
+                  value={this.location.VisitDate}
                   onChange={this.onChange}
                 />
               </div>

@@ -6,9 +6,10 @@ function SearchWindow() {
   return (
     <div className="banner">
     <h1>Welcome</h1>
-     <h3>Search your favorite Vacations</h3>
+    <h3>Search your favorite Vacations</h3>
+    <br></br>
     <div className="vacay-input">
-     <InputGroup className="mb-3">
+    <InputGroup className="mb-3">
     <Form>
       <Form.Group className="mb-3" controlId="countryName">
         <Form.Label>Country Name</Form.Label>
@@ -16,18 +17,18 @@ function SearchWindow() {
       </Form.Group>
       <Form.Group className="mb-3" controlId="cityName">
         <Form.Label>Enter City</Form.Label>
-        <Form.Control type="password" placeholder="City" />
+        <Form.Control type="city" placeholder="City" />
       </Form.Group>
-     <Form.Group className="mb-3" controlId="photo">
+    <Form.Group className="mb-3" controlId="photo">
         <Form.Label>Upload Pictures</Form.Label>
         <Form.Control type="photo" placeholder="Photos" />
-      </Form.Group>
+    </Form.Group>
       <Button variant="primary" type="submit">
         Submit
       </Button>    
     </Form>
     </InputGroup>
-       </div>
+      </div>
     </div>
   );
 }
