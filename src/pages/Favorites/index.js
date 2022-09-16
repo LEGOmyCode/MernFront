@@ -16,15 +16,16 @@ const Locations = () => {
   const display =
     locations.length &&
     locations.map((location) => {
-      return <h3 key={location._id}> {location.countryName} </h3>;
+      return <h3 key={location._id}> {location.countryName} </h3>;    
     });
+    
   return (
-    <div className="locationspage">
+    <div className="locationsPage">
       <div className="locations">
-        <h1>My Locations</h1>
+        <h1>Places I have Visited</h1>
       </div>
       {display}
-      <h1>Change the words in Locations on every Favorites</h1>
+      <h3></h3>
     </div>
   );
 };
